@@ -48,6 +48,8 @@ if [ -f composer.json ]; then
   fi
 fi
 
+pecl install fann
+
 # post-assemble files
 process_extending_files ./php-post-assemble/ ${PHP_CONTAINER_SCRIPTS_PATH}/post-assemble/
 
